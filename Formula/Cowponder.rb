@@ -1,10 +1,12 @@
 class Cowponder < Formula
-  desc "Description of your package"
-  homepage "https://example.com"
-  url "https://example.com/your-package/archive/v1.0.0.tar.gz"
+  desc "A simple terminal command that displays randomly selected philosophical thoughts from a cow"
+  homepage "https://github.com/maxcai314/homebrew-cowponder"
+  url "https://xz.ax/cowponder-homebrew-v0.0.1.tar.gz"
   sha256 "checksum"
 
   # Additional options and dependencies can be specified here
+  depends_on "python@3"
+  depends_on "cowsay"
 
   def install
     # Build and install your package here
