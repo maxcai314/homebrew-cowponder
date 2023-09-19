@@ -1,4 +1,4 @@
-# Maxcai314 Cowponder
+# Cowponder
 
 ## How do I install these formulae?
 
