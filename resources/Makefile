@@ -12,6 +12,7 @@ install: $(BUILD_DIR)/$(TARBALL_FILE)
 
 $(BUILD_DIR)/$(TARBALL_FILE): $(CONTENTS_DIR)
 	tar -czvf $(BUILD_DIR)/$(TARBALL_FILE) -C $(CONTENTS_DIR) .
+	shasum -a 256 $(BUILD_DIR)/$(TARBALL_FILE)
 
 clean:
 	rm -f $(BUILD_DIR)/$(TARBALL_FILE)
