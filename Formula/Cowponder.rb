@@ -5,15 +5,24 @@ class Cowponder < Formula
 #  sha256 "checksum" # this is a later issue
 
   # Additional options and dependencies can be specified here
-  depends_on "make" => :build
   depends_on "python@3"
   depends_on "cowsay"
 
   def install
-    # Build and install your package here
+    bin.install "ponder"
+    bin.install "cowponder"
+    etc.install "cowthoughts.txt"
+  end
+
+  def uninstall
+    rm bin/"ponder"
+    rm bin/"cowponder"
+    rm etc/"cowthoughts.txt"
   end
 
   test do
-    # Add some test cases here if applicable
+    assert_predicate bin/"ponder", :exist?
+    assert_predicate bin/"cowponder", :exist?
+    assert_predicate etc/"cowthoughts.txt", :exist?
   end
 end
