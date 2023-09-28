@@ -20,7 +20,7 @@ A simple terminal command that displays randomly selected philosophical thoughts
 
 Or `brew tap maxcai314/cowponder` and then `brew install cowponder`.
 
-For debian-based operating systems, use the [debian cowponder](https://github.com/maxcai314/cowponder) repository
+For other operating systems, use the [main cowponder repository](https://github.com/maxcai314/cowponder)
 
 ## Usage
 
